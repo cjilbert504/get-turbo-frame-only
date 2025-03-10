@@ -1,6 +1,8 @@
 <div class="space-y-8 w-full md:flex md:items-start md:justify-between md:space-x-8 md:space-y-0">
   <div class="bg-gray-100 p-8 w-full rounded-lg sm:flex-1">
-    <%= render "register_form" %>
+    <%= turbo_frame_tag "checkout_flow" do %>
+      <%= render "register_form" %>
+    <% end %>
   </div>
 
   <div class="space-y8 sm:w-1/3">
